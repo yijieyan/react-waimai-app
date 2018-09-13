@@ -1,0 +1,52 @@
+.bottom-bar {
+  position: fixed;
+  bottom:0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color:#999;
+  width: 100%;
+  height:px2rem(50px);
+  border-top:1px solid #b6b6b6;
+  background: #f6f6f6f2;
+  .bottom-item {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .bottom-icon {
+      background: url('../BottomBar/imgs/tab-icons.png') no-repeat;
+      background-size: cover;
+      width: 25px;
+      height:25px;
+      margin-bottom: 5px;
+    }
+    .homeIcon { 
+      background-position-y: -73px;
+      &.active {
+        background-position-y: -48px;
+      }
+    }
+    .orderIcon {
+      background-position-y: -26px;
+      &.active {
+        background-position-y: 0px;
+      }
+    }
+    .myIcon {
+      background-position-y: -125px;
+      &.active {
+        background-position-y: -100px;
+      }
+    }
+    .bottom-text {
+      font-size:11px;
+      &.active {
+        color:#333;
+      }
+    }
+  }
+}

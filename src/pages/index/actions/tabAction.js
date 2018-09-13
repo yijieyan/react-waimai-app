@@ -1,8 +1,15 @@
-import { ADD_TODO } from './actionTypes';
+import { TAB_ITEM, CHANGE_TAB } from './actionTypes';
 
-export const addTodo = (num) => {
+export const getTabs = (obj) => {
   return {
-    type: ADD_TODO,
-    num: num
+    type: TAB_ITEM,
+    obj
   }
 };
+
+export const changeTab = (obj) => {
+  return {
+    type: CHANGE_TAB,
+    obj
+  }
+}

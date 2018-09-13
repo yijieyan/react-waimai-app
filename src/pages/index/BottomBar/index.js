@@ -1,5 +1,8 @@
+import './index.scss';
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { changeTab } from '../actions/tabAction';
 
 /**
  * name: BottomBar
@@ -10,25 +13,51 @@ class BottomBar extends Component {
     super(props)
   }
 
+  /**
+   * 
+   * @param {底部tabBar}  
+   */
+  changeTab (item) {
+    this.props.dispatch(changeTab({activeTab: item.key}));
+  }
+
+  /**
+   * 根据redux中的数据生成底部tarBar
+   */
   createBottom () {
-    let arr = ['首页', '外卖', '我的'];
-    return arr.map(item => (
-      <div key={item} className="bottom-content">
-        <div className="bottom-icon"></div>
-        <div className="bottom-text">{item}</div>
-      </div>
-    ))
+    let arr = this.props.tabs;
+    return arr.map(item => {
+      let iconCls = `bottom-icon ${item.key}`;
+      let textCls = `bottom-text`
+      if (item.key === this.props.activeTab) {
+        iconCls += ' active';
+        textCls += ' active';
+      }
+      return (
+        <li key={item.name} className="bottom-item" onClick={()=>{this.changeTab(item)}}>
+          <div className={iconCls}></div>
+          <div className={textCls}>{item.name}</div>
+        </li>
+      )
+    })
   }
 
   render () {
     return (
-      <div className="bottom-bar">
+      <ul className="bottom-bar">
        {this.createBottom()}
-      </div>
+      </ul>
     )
   }
 }
 
-export default connect(() => ({
-  
+
+BottomBar.propTypes = {
+  tabs: PropTypes.array,
+  activeTab: PropTypes.string,
+  dispatch: PropTypes.func
+}
+export default connect((state) => ({
+  tabs: state.tabReducer.tabs,
+  activeTab: state.tabReducer.activeTab
 }))(BottomBar);
