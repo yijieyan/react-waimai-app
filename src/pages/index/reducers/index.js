@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
 import tabReducer from './tabReducer';
+import navBarReducer from './navBarReducer';
 
 let reducer = combineReducers({
-  tabReducer
+  tabReducer,
+  navBarReducer
 });
 
 export default reducer;

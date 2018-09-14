@@ -20,30 +20,30 @@
     .bottom-icon {
       background: url('../BottomBar/imgs/tab-icons.png') no-repeat;
       background-size: cover;
-      width: 25px;
-      height:25px;
-      margin-bottom: 5px;
+      width: px2rem(25px);
+      height:px2rem(25px);
+      margin-bottom: px2rem(5px);
     }
     .homeIcon { 
-      background-position-y: -73px;
+      background-position-y: px2rem(-73px);
       &.active {
-        background-position-y: -48px;
+        background-position-y: px2rem(-48px);
       }
     }
     .orderIcon {
-      background-position-y: -26px;
+      background-position-y: px2rem(-26px);
       &.active {
-        background-position-y: 0px;
+        background-position-y: px2rem(0px);
       }
     }
     .myIcon {
-      background-position-y: -125px;
+      background-position-y: px2rem(-125px);
       &.active {
-        background-position-y: -100px;
+        background-position-y: px2rem(-100px);
       }
     }
     .bottom-text {
-      font-size:11px;
+      font-size:px2rem(11px);
       &.active {
         color:#333;
       }

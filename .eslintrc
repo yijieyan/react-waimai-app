@@ -6,7 +6,8 @@
     "document":true,
     "module":true,
     "require":true,
-    "__dirname":true
+    "__dirname":true,
+    "Promise":true
   },
   "rules":{
     "no-console": "off"

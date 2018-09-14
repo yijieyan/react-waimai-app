@@ -21,10 +21,13 @@ class BottomBar extends Component {
     this.props.dispatch(changeTab({activeTab: item.key}));
   }
 
+
+
+
   /**
    * 根据redux中的数据生成底部tarBar
    */
-  createBottom () {
+   createBottom () {
     let arr = this.props.tabs;
     return arr.map(item => {
       let iconCls = `bottom-icon ${item.key}`;

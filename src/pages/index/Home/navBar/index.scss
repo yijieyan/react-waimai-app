@@ -1,0 +1,53 @@
+.navBar {
+  position: relative;
+  .banner {
+    width: 100%;
+    height: 170px;
+  }
+  .navBar-header {
+    font-size:0px;
+    position:absolute;
+    top:0px;
+    margin-top: 10px;
+    height:40px;
+    .location {
+      margin-left: 20px;
+      display: inline-block;
+      background: rgba(0,0,0,.3);
+      border-radius: 20px;
+      padding: 8px;
+      .location-marker,.location-arrow {
+        font-size:16px;
+        color:#fff;
+        vertical-align: middle;
+      }
+      .location-address {
+        margin: 0px 5px;
+        color:#fff;
+        font-size:14px;
+        vertical-align: middle;
+      }
+    }
+    .search {
+      margin-left: 20px;
+      display: inline-block;
+      font-size:0px;
+      background: #fff;
+      padding: 8px;
+      border-radius: 20px;
+    }
+    .search-icon {
+      font-size:16px;
+      color:#333;
+      vertical-align: middle;   
+    }
+    .search-text {
+      margin-left: 5px;
+      display: inline-block;
+      width: 120px;  
+      font-size:14px;
+      color:#333;
+      vertical-align: middle;   
+    }
+  }
+}
