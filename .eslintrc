@@ -9,7 +9,10 @@
     "__dirname":true,
     "Promise":true
   },
+  "env":{
+    "browser": true
+  },
   "rules":{
-    "no-console": "off"
+    "no-console" : "off"
   }
 }

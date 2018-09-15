@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import BottomBar from '../BottomBar/index';
 import Home from '../Home/home';
@@ -12,10 +12,10 @@ class Main extends Component {
 
   render () {
     return (
-      <div>
+      <Fragment>
         <Home/>
         <BottomBar/>
-      </div>
+      </Fragment>
     )
   }
 }

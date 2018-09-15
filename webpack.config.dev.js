@@ -50,7 +50,14 @@ module.exports = {
     contentBase: devPath,
     compress: true,
     hot: true,
-    port: 8080
+    port: 8080,
+    proxy: {
+      "/api": {
+        target: "https://www.easy-mock.com/mock/5b319a6ea776703db5dff933/base/",
+        secure: false
+        // pathRewrite: {"^/api" : ""}
+      }
+    }
   },
   module: {
     rules: [

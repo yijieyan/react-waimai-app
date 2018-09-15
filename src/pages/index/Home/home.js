@@ -1,5 +1,6 @@
-import React , { Component } from 'react';
+import React , { Component,Fragment } from 'react';
 import NavBar from './navBar/index';
+import Banner from './banner/index';
 
 /**
  * 首页
@@ -11,9 +12,10 @@ class Home extends Component {
   
   render () {
     return (
-      <div>
+      <Fragment>
         <NavBar/>
-      </div>
+        <Banner/>
+      </Fragment>
     )
   }
 }

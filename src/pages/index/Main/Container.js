@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { hot } from 'react-hot-loader';
 import Main from './index';
 
@@ -6,9 +6,9 @@ class Container extends Component {
   
   render () {
     return (
-      <div>
+      <Fragment>
         <Main/>
-      </div>
+      </Fragment>
     )
   }
 }
