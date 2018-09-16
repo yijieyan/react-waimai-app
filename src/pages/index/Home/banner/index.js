@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { getBannerData } from '../../actions/bannerAction';
 import './index.scss';
 
 
@@ -13,11 +12,6 @@ class Banner extends Component {
     super(props)
   }
   
-
-  componentDidMount () {
-    this.props.dispatch(getBannerData());
-  }
-
   createBannerLists () {
     let lists = this.props.banners;
     return lists.map(item => (
@@ -40,9 +34,8 @@ class Banner extends Component {
 } 
 
 Banner.propTypes = {
-  banners: PropTypes.array,
-  dispatch: PropTypes.func
+  banners: PropTypes.array
 }
-export default connect((state) => ({
-  banners: state.bannerReducer.banners
+export default connect(() => ({
+  
 }))(Banner);

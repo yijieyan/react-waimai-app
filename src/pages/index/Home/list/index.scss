@@ -1,0 +1,126 @@
+.list-container {
+  background: #fff; 
+  margin-bottom: px2rem(50px);
+  overflow: hidden;
+  font-size: px2rem(0px);
+  .list-title {
+    position: relative;
+    margin-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    font-size:16px;
+    color:#333;
+    font-weight: 700;
+    text-align: center;
+    &:before {
+      display: inline-block;
+      content: '';
+      position: absolute;
+      top: 22px;
+      left:110px;
+      width: 30px;
+      border-top:1px solid #333;
+    }
+    &:after {
+      display: inline-block;
+      content:'';
+      position: absolute;
+      top: 22px;
+      right:110px;
+      width: 30px;
+      border-top:1px solid #333;
+    }
+  }
+  .list-content {
+    width: calc(100% - px2rem(20px));
+    margin: 0px px2rem(10px);
+    padding: px2rem(15px) 0px;
+    &:after {
+      background: #f4f4f4;
+    }
+    .list-left {
+      position: relative;
+      float:left;
+      .list-img {
+        width: px2rem(84px);
+        height:px2rem(63px);
+        border: px2rem(1px) solid #999;
+      }
+      .list-brand {
+        position: absolute;
+        top:0px;
+        left:0px;
+        background: #ffa627;
+        color: #fff;
+        width: px2rem(24px);
+        height:px2rem(12px);
+        padding: px2rem(2px);
+        font-size:px2rem(12px);
+      }
+    }
+    .list-right {
+      margin-left: px2rem(10px);
+      float:left;
+      width: px2rem(258px);
+      .list-right-title {
+        color:#333;
+        font-size:px2rem(16px);
+        font-weight: 500;
+      }
+      .desc {
+        margin: 5px 0px;
+        width: 100%;
+        .list-star {
+          float: left;
+          margin-right: px2rem(10px);
+          color: #e5e5e5;
+          .star {
+            float: left;
+            font-size: px2rem(20px);
+          }
+          .halfStar {
+            font-size: px2rem(14px);
+            margin-top: px2rem(4px);
+          }
+          .active {
+            color: #fbd161;
+          }
+        }
+        .count {
+          float: left;
+          padding-top: px2rem(4px);
+          color:#e5e5e5;
+          font-size:px2rem(12px);
+        }
+        .distance {
+          float: right;
+          padding-top: px2rem(4px);
+          color:#e5e5e5;
+          font-size:px2rem(12px);
+        }
+      }
+      .sendCondition {
+        margin-bottom: px2rem(10px);
+        color:#e5e5e5;
+        font-size:px2rem(12px);
+      }
+      .tag {
+        .tag-item {
+          width: 100%;
+          .tag-item-img {
+            margin-bottom: px2rem(5px);
+            float: left;
+            margin-right: px2rem(10px);
+            width: px2rem(14px);
+            height:px2rem(14px);
+          }
+          .tag-item-text {
+            margin-top: px2rem(1px);
+            color:#898989;
+            font-size:px2rem(12px);
+          }
+        }
+      }
+    }
+  }
+}

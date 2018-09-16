@@ -2,3 +2,27 @@
   $rem : 37.5px;
   @return ($px / $rem) + rem;
 }
+.clearfix {
+  display: inline-block;
+  content:'';
+  overflow: hidden;
+  clear: both;
+}
+
+.border-scale-1px {
+  position: relative;
+  border: none;
+}
+
+.border-scale-1px:after {
+  position: absolute;
+  content: '';
+  height:1px;
+  width: 100%;
+  bottom:0px;
+  left:0;
+  transform: scaleY(0.5);
+  -webkit-transform: scaleY(0.5);
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+}

@@ -53,8 +53,8 @@ module.exports = {
     port: 8080,
     proxy: {
       "/api": {
-        target: "https://www.easy-mock.com/mock/5b319a6ea776703db5dff933/base/",
-        secure: false
+        target: "http://localhost:3000/"
+        // secure: false
         // pathRewrite: {"^/api" : ""}
       }
     }
