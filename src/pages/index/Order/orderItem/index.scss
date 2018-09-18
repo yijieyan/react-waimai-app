@@ -1,27 +1,27 @@
 .order-list {
   background: #fff;
-  padding-bottom: 50px;
+  padding-bottom: px2rem(50px);
   .order-item {
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+    padding-bottom: px2rem(10px);
+    margin-bottom: px2rem(20px);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    border-top: 10px solid #eee;
+    border-top: px2rem(10px) solid #eee;
     &:after {
       background: #eee;
     }
     .left {
-      margin-left: 15px;
+      margin-left: px2rem(15px);
       .order-img {
-        width: 40px;
-        height:40px;
+        width: px2rem(40px);
+        height:px2rem(40px);
         border-radius: 50%;
-        margin: 5px 10px 5px 0px;
+        margin: px2rem(5px) px2rem(10px) px2rem(5px) 0px;
       }   
     }
     .right {
-      width: 315px;
+      width: px2rem(315px);
       .firstLine {
         display: flex;
         flex-direction: row;
@@ -65,12 +65,12 @@
         }
       }
       .desc {
-        margin: 20px 10px 10px 0px;
-        font-size:12px;
+        margin: px2rem(20px) px2rem(10px) px2rem(10px) 0px;
+        font-size:px2rem(12px);
         color:#666;
         text-align: right;
         .money {
-          font-size: 14px;
+          font-size: px2rem(14px);
           color: #151515;
         }  
       }
