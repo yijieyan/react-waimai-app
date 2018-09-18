@@ -1,7 +1,9 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import BottomBar from '../BottomBar/index';
-import Home from '../Home/home';
+// import Home from '../Home/home';
+// import My from '../My/index';
+import Order from '../Order/index';
 
 class Main extends Component {
   constructor(props) {
@@ -13,7 +15,9 @@ class Main extends Component {
   render () {
     return (
       <Fragment>
-        <Home/>
+        {/* <Home/> */}
+        {/* <My/> */}
+        <Order/>
         <BottomBar/>
       </Fragment>
     )

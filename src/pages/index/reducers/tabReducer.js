@@ -15,7 +15,7 @@ let defaultState = {
       key: 'myIcon'
     }
   ],
-  activeTab: 'homeIcon'
+  activeTab: 'orderIcon'
 };
 
 
